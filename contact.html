@@ -1,20 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
-
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Contact</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>        
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
-<script src="contact.js"></script>
 </head>
 
 <body>
@@ -41,24 +33,29 @@
     <div class="container">
          <div class="header p-3"><h4>Contact Me:</h4>
         </div>
-       <form id="contact-form" method="post" action="contact.php">
+       <form class="contact-form" method="post" action="contact.php">
         <div class="form-group">
           <label for="name">Name:</label>
-          <input id="name" type="text" class="form-control" name="name" placeholder="Name" required="required" data-error="Valid name required.">
+          <input type="text" class="form-control" name="name" placeholder="Name" required="required" data-error="Valid name required.">
           </div>
             <div class="form-group">
                 <label for="email">Email address:</label>
-                <input id="email" type="email" class="form-control" name="email" placeholder="example@domain.com" required="required" data-error="Valid email is required.">
+                <input type="text" class="form-control" name="email" placeholder="example@domain.com" required="required" data-error="Valid email is required.">
             </div>
             <div class="form-group">
               <label for="message">Message:</label>
-              <textarea type="textarea" id="message" class="form-control" rows="5" name="message" maxlength="1000" required="required" data-error="Valid message required."></textarea>
+              <textarea class="form-control" rows="5" name="message" maxlength="1000" required="required" data-error="Valid message required."></textarea>
             </div>
-            <input type="submit" class="btn btn-info active btn-send" value="Send">
-              </form>    
+            <button type="submit" name="submit" class="btn btn-info active">Send Message</button>
               <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Posted your message successfully!</h3> </div>
-              <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+              <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your message. </div>
+            </form>   
               </div>
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>        
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+<script src="contact.js"></script>
 </body>
 
 </html>

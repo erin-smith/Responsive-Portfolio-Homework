@@ -1,26 +1,16 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-/*
-Tested working with PHP5.4 and above (including PHP 7 )
 
- */
-require_once './vendor/autoload.php';
+if (isset($_POST['submit'])) {
+    
+    $name = $_POST['name'];
+    $mailFrom = $_POST['email'];
+    $message = $_POST['message'];
 
-use FormGuide\Handlx\FormHandler;
-
-
-$pp = new FormHandler(); 
-
-$validator = $pp->getValidator();
-$validator->fields(['name','email'])->areRequired()->maxLength(50);
-$validator->field('email')->isEmail();
-$validator->field('message')->maxLength(6000);
+    $mailTo = "wineanddirt@yahoo.com";
+    $headers = "From: ".$mailFrom;
+    $txt = "You have received an e-mail from ".$name.".\n\n".$message;
 
 
-
-
-$pp->sendEmailTo('erin.acumen@gmail.com'); // ← Your email here
-
-echo $pp->process($_POST);
+mail($mailTo, $txt, $headers);
+header("Location: index.html?mailsent");
+}
