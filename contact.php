@@ -1,42 +1,26 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+/*
+Tested working with PHP5.4 and above (including PHP 7 )
 
-// configure
-$from = 'erin.acumen@gmail.com';
-$sendTo = 'erin.acumen@gmail.com';
-$subject = 'New message from contact form';
-$fields = array('name' => 'Name', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in email
-$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
-$errorMessage = 'There was an error while submitting the form. Please try again later';
+ */
+require_once './vendor/autoload.php';
 
-// let's do the sending
+use FormGuide\Handlx\FormHandler;
 
-try
-{
-    $emailText = "You have new message from contact form\n=============================\n";
 
-    foreach ($_POST as $key => $value) {
+$pp = new FormHandler(); 
 
-        if (isset($fields[$key])) {
-            $emailText .= "$fields[$key]: $value\n";
-        }
-    }
+$validator = $pp->getValidator();
+$validator->fields(['name','email'])->areRequired()->maxLength(50);
+$validator->field('email')->isEmail();
+$validator->field('message')->maxLength(6000);
 
-    mail($sendTo, $subject, $emailText, "From: " . $from);
 
-    $responseArray = array('type' => 'success', 'message' => $okMessage);
-}
-catch (\Exception $e)
-{
-    $responseArray = array('type' => 'danger', 'message' => $errorMessage);
-}
 
-if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
-    $encoded = json_encode($responseArray);
-    
-    header('Content-Type: application/json');
-    
-    echo $encoded;
-}
-else {
-    echo $responseArray['message'];
-}
+
+$pp->sendEmailTo('erin.acumen@gmail.com'); // ← Your email here
+
+echo $pp->process($_POST);
