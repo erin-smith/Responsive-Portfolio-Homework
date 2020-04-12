@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-info p-3 mb-1">
             <a class="nav-link" href="https://s3-media0.fl.yelpcdn.com/bphoto/Q7bdFrX8vI403fAF-BP6-Q/o.jpg">
-            <img alt="latte art tulip" src="https://s3-media0.fl.yelpcdn.com/bphoto/Q7bdFrX8vI403fAF-BP6-Q/o.jpg" style="width:40px;" style="height:40px;">
+            <img alt="latte art tulip" src="https://s3-media0.fl.yelpcdn.com/bphoto/Q7bdFrX8vI403fAF-BP6-Q/o.jpg" width=40 height=40>
             </a>
        <ul class="navbar-nav">
             <li class="nav-item">
@@ -32,48 +32,31 @@
           </li>
     </ul>
     </nav>
-  <section>
-    <div class="container pt-5">
-      <div class="row">
-          <div class="col-auto py-4">
-              <h3>Contact Me:</h3>
-            </div>
-              </section>
-        <form class="form-horizontal" id="contact-form" role="form" method="post" action="contact.php">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="name" class="col-auto control-label">Name</label>
-                <div class="col-sm-10">
-                    <input id="name" type="text" class="form-control" name="name" placeholder="Name" required="reuired" data-error="Valid name required.">
-                    <div class="help-block with-errors"></div>
-                </div>
+
+    <div class="container">
+         <div class="header p-3"><h4>Contact Me:</h4>
+        </div>
+       <form id="contact-form" method="post" action="contact.php" role="form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input id="name" type="text" class="form-control" name="name" placeholder="Name" required="required" data-error="Valid name required.">
+          </div>
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input id="email" type="email" class="form-control" name="email" placeholder="example@domain.com" required="required" data-error="Valid email is required.">
             </div>
             <div class="form-group">
-                <label for="email" class="col-auto control-label">Email</label>
-                <div class="col-sm-10">
-                    <input id="email" type="email" class="form-control" name="email" placeholder="example@domain.com" required="required" data-error="Valid email is required.">
-                    <div class="help-block with-errors"></div>
-                </div>
+              <label for="message">Message:</label>
+              <textarea id="message" class="form-control" rows="5" name="message" maxlength="1000" required="required" data-error="Valid message required."></textarea>
             </div>
-            <div class="form-group">
-                <label for="message" class="col-auto control-label">Message:</label>
-                <div class="col-sm-10">
-                    <textarea class="form-control" rows="4" name="message" maxlength="4000" required="required" data-error="Valid message required."></textarea>
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-            <div class="container">
-                <input type="submit" class="btn btn-info active btn-send" value="Send Message">
-              </div>            
-            </div>
-            </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>        
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
-            <script src="contact.js"></script>
-        </form>
+            <input type="submit" class="btn btn-info active btn-send" value="Send Message">
+              </form>    
+              </div>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+          <script src="contact.js"></script>
+          <script src="validator.js"></script>
 </body>
 
 </html>
