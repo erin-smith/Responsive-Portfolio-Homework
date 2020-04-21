@@ -1,4 +1,5 @@
 # Responsive-Portfolio-Homework
+
 This Portfolio website was my first project utilizing Bootstrap.
 All links in the Navbar should work, and I added an icon of a latte I made at work, for fun.
 Each of the 3 html pages was checked using an html validator.
