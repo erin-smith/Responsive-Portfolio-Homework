@@ -12,4 +12,4 @@ My Linked In, Github profiles have been updated and my Resume with contact infor
 
 The portfolio contains a video game, a Resume page, a Timed JavaScript Quiz, a Random Password Generator, my first group project "Purple Pages," and Schedule Day Planner.
 
-Enjoy!
+Enjoy!  https://erin-smith.github.io/Responsive-Portfolio-Homework/
