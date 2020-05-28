@@ -2,10 +2,10 @@
     box-sizing: border-box;
   }
   html {
-    min-height: 100%;
+    height: 100%;
 }
 p {
-    margin: 20px;
+    margin: 15px;
     font-size: 15px;
     text-indent:10px;
     color: #343a40;
@@ -18,7 +18,7 @@ p {
     margin-top: 30px;
     padding-bottom: 15px;
 }
-h1 {
+h2 {
     background-color: white;
     color:#343a40;
     margin-bottom: 15px;
@@ -29,16 +29,14 @@ body {
   background-image: url('pics/berry.jpg');
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     height: 100%;
     color: white;
-    font-family: 'Montserrat', sans-serif;
 }
 .navbar-nav {
     padding-top: 0;
     padding-bottom: 0;
-    font-family: 'Bebas Neue', sans-serif;
-
+    margin-left: auto;
 }
 .navbar-brand {
     color: #f5f5f5;
@@ -47,11 +45,11 @@ body {
     margin: 0;
     text-align: center;
     font-size: 26px;
-    margin-right: 1000px;
+    margin: auto;
 }
 
 a {
-    color: darkslategray;
+    color: darkmagenta;
     font-size: 20px;
 }
 .nav-link:hover {
@@ -101,24 +99,30 @@ label, h4 {
     color: white;
     transform: rotateY(180deg);
   }
-  footer {
+  .button{
+    
+  }
+  .footer {
     background-color:#343a40;
     position: fixed;
     bottom: 0;
     width: 100%;
     color: white;
-    padding: 0;
-    margin: auto; 
-    font-size: 12px;
+    margin-top: auto; 
+    font-size: 20px;
+    padding: 3px;
 }
 
-.pro, .hub {
-    float: right;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 10px;
-    color: white;
-    font-size: 3em;
+.footer-icons a {
+  float: right;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+  margin-top: 5px;
+	margin-right: 20px;
+	margin-bottom: 5px;
 }
  
   /* Responsive layout - makes a two column-layout instead of four columns */
@@ -126,12 +130,47 @@ label, h4 {
     .column {
       width: 50%;
     }
+    .navbar-nav {
+      text-align: center;
+      display: inline block;
+      font-size: smaller;
   }
+
+  .navbar-brand {
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .navbar {
+      padding: 0;
+      margin: 0;
+  }
+}
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .column {
       width: 100%;
     }
+    .navbar-nav {
+      text-align: center;
+      display: inline block;
+      font-size: smaller;
   }
 
+  .navbar-brand {
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .navbar {
+      padding: 0;
+      margin: 0;
+  }
+
+
+  }
