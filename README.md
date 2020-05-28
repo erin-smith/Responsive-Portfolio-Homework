@@ -1,10 +1,15 @@
 # Responsive-Portfolio-Homework
 
-This Portfolio website was my first project utilizing Bootstrap.
-All links in the Navbar should work, and I added an icon of a latte I made at work, for fun.
-Each of the 3 html pages was checked using an html validator.
-I used containers, grids, box method, buttons, forms, lists, and responsive Bootstrap syntax.
-All pages were checked with viewportemulator.com to try and ensure responsiveness. 
-The portfolio contains a video game, a bio-page, a refactor for semantic html project, and the game "Rock, Paper, Scissors".  The other two links are pages that I am not quite finished with yet- but will add soon.
-The contact page is responsive and the inputs all work.  However, I will have to get more experience before I can get the email to actually send properly.
-This will be added after I learn it. 
+This Responsive website has been updated to include new work from my most recent projects, updated contact information, resume and working links to reach me through many methods. 
+
+The About page includes a Bio and clickable links in the header and footer (LinkedIn, Instagram, Github, and more)!
+
+The Portfolio page includes 6 of my favorite projects with a link and printable PDF of my resume. The flip tiles are rendered using screenshots from each actual project.  The tiles include clickable buttons to both the Github Repo and live sites.
+
+I used jQuery and set up an API for future email use - I would like to keep updating this page as a working portfolio.
+
+My Linked In, Github profiles have been updated and my Resume with contact information (including phone number) is current.
+
+The portfolio contains a video game, a Resume page, a Timed JavaScript Quiz, a Random Password Generator, my first group project "Purple Pages," and Schedule Day Planner.
+
+Enjoy!

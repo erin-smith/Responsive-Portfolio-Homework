@@ -5,12 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Contact</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity=""
         crossorigin="anonymous" />
-        <link rel="stylesheet" 
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
-        crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -35,9 +32,9 @@
 </div>
 </nav>
     <div class="container" id="boxz">
-         <div class="header p-3"><h4>Contact Me:</h4>
+         <div class="header p-3"><h4>Contact Me Here! Or through my portfolio "Resume" tile.</h4>
         </div>
-       <form class="contact-form" method="post" action="contact.php">
+       <form class="contact-form" method="post">
         <div class="form-group">
           <label for="name">Name:</label>
           <input id="name" type="text" class="form-control" name="name" placeholder="Name" required="required" data-error="Valid name required.">
@@ -50,7 +47,7 @@
               <label for="message">Message:</label>
               <textarea id="message" class="form-control" rows="5" name="message" maxlength="1000" required="required" data-error="Valid message required."></textarea>
             </div>
-            <input type="submit" name="submit" class="btn btn-info active" value="Send Message">
+            <input id="mail" type="submit" name="submit" class="btn btn-info active" value="Send Message">
             </form>   
               </div>
               <footer class="footer">
@@ -62,12 +59,12 @@
                 </div>
                 </div>
               </footer>
-              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>>        
-             <script src="contact.js"></script>
-             <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="script.js"></script>
+<script src="mail.js"></script>
       </body>
 
 </html>
