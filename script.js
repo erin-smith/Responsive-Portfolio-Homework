@@ -13,19 +13,19 @@ $(document).ready(function(){
     "This schedule-planner displays a daily 8am-6pm calendar and allows the user to plan appointments for each hour of the day. You can generate a new quote of the day as a daily heading for fun or inspiration.", 
     'pics/scheduler.png', "https://github.com/erin-smith/schedule-planner", "https://erin-smith.github.io/schedule-planner", "grey");
   makeCard("Purple Pages", 
-  "A vital web application for finding which streaming service offers the TV/sports program or film that you want to watch right NOW!", 
+  "Group API Project:  A vital web application for finding which streaming service offers the TV show, sports program or film that you want to watch right NOW!", 
   'pics/purplepages.png', "https://github.com/erin-smith/Purple-Pages", "https://erin-smith.github.io/Purple-Pages/", "mediumpurple");
   makeCard("Password Generator", 
-  "This is a password generator that creates a dynamic random password by taking user inputs into account.", 
+  "This is a random password generator that creates a dynamic password by taking 5 criteria from user inputs into account.", 
   'pics/passwordgen.png', 'https://github.com/erin-smith/password-gen-homework', "https://erin-smith.github.io/password-gen-homework/", "indianred");
   makeCard("JavaScript Quiz", 
   "This a timed, multiple-choice JavaScript quiz that utilizes event clicks, elements that disappear and reappear, hover, and overlay.", 
   'pics/quiz.png', "https://github.com/erin-smith/Quiz", "https://erin-smith.github.io/Quiz/", "cadetblue");
-  makeCard("My First Webpage", 
-  "Resume, Bio, Contacts", 
+  makeCard("Resume Tile", 
+  "This is an update of my First Webpage, Resume, Bio, and Current Contact Info.", 
   'pics/myfirstpage.png', "https://github.com/erin-smith/resume", "https://erin-smith.github.io/resume/", "burlywood");
   makeCard("Kill the Virus!", 
-  "My first videogame made in Scratch!", 
+  "Inspired by COVID-19 back in March 20', This is my first ever videogame made in Scratch!", 
   'pics/game.png', "https://scratch.mit.edu/projects/378910339/", "https://scratch.mit.edu/projects/378910339/", "greenyellow");
   
 });
