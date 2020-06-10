@@ -17,10 +17,10 @@ $(document).ready(function(){
   'pics/purplepages.png', "https://github.com/erin-smith/Purple-Pages", "https://erin-smith.github.io/Purple-Pages/", "mediumpurple");
   makeCard("Team Generator", 
   "This is a Node CLI app that generates a clear webpage of ID cards displaying each member of your Software Engineering Team. The cards are made with user input and define a clear summary of info.", 
-  'pics/team.png', 'https://github.com/erin-smith/team-generator', "https://www.youtube.com/watch?v=px2xPOccoKU", "darkslategrey");
+  'pics/team.png', 'https://github.com/erin-smith/team-generator', "https://www.youtube.com/watch?v=px2xPOccoKU", "cadetblue");
   makeCard("JavaScript Quiz", 
   "This a timed, multiple-choice JavaScript quiz that utilizes event clicks, elements that disappear and reappear, hover, and overlay.", 
-  'pics/quiz.png', "https://github.com/erin-smith/Quiz", "https://erin-smith.github.io/Quiz/", "cadetblue");
+  'pics/quiz.png', "https://github.com/erin-smith/Quiz", "https://erin-smith.github.io/Quiz/", "indianred");
   makeCard("Resume Tile", 
   "This is an update of my First Webpage, Resume, Bio, and Current Contact Info.", 
   'pics/myfirstpage.png', "https://github.com/erin-smith/resume", "https://erin-smith.github.io/resume/", "burlywood");
