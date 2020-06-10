@@ -15,9 +15,9 @@ $(document).ready(function(){
   makeCard("Purple Pages", 
   "Group API Project:  A vital web application for finding which streaming service offers the TV show, sports program or film that you want to watch right NOW!", 
   'pics/purplepages.png', "https://github.com/erin-smith/Purple-Pages", "https://erin-smith.github.io/Purple-Pages/", "mediumpurple");
-  makeCard("Password Generator", 
-  "This is a random password generator that creates a dynamic password by taking 5 criteria from user inputs into account.", 
-  'pics/passwordgen.png', 'https://github.com/erin-smith/password-gen-homework', "https://erin-smith.github.io/password-gen-homework/", "indianred");
+  makeCard("Team Generator", 
+  "This is a Node CLI app that generates a clear webpage of ID cards displaying each member of your Software Engineering Team. The cards are made with user input and define a clear summary of info.", 
+  'pics/team.png', 'https://github.com/erin-smith/team-generator', "https://www.youtube.com/watch?v=px2xPOccoKU", "darkslategrey");
   makeCard("JavaScript Quiz", 
   "This a timed, multiple-choice JavaScript quiz that utilizes event clicks, elements that disappear and reappear, hover, and overlay.", 
   'pics/quiz.png', "https://github.com/erin-smith/Quiz", "https://erin-smith.github.io/Quiz/", "cadetblue");
