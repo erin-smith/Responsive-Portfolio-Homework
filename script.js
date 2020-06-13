@@ -10,13 +10,13 @@ $(document).ready(function(){
   }
   
   makeCard("Scheduler", 
-    "This schedule-planner displays a daily 8am-6pm calendar and allows the user to plan appointments for each hour of the day. You can generate a new quote of the day as a daily heading for fun or inspiration.", 
+  "This schedule-planner displays a daily 8am-6pm calendar and allows the user to plan appointments for each hour of the day. You can generate a new quote of the day as a daily heading for fun or inspiration.", 
     'pics/scheduler.png', "https://github.com/erin-smith/schedule-planner", "https://erin-smith.github.io/schedule-planner", "grey");
   makeCard("Purple Pages", 
   "Group API Project:  A vital web application for finding which streaming service offers the TV show, sports program or film that you want to watch right NOW!", 
   'pics/purplepages.png', "https://github.com/erin-smith/Purple-Pages", "https://erin-smith.github.io/Purple-Pages/", "mediumpurple");
   makeCard("Team Generator", 
-  "This is a Node CLI app that generates a clear webpage of ID cards displaying each member of your Software Engineering Team. The cards are made with user input and define a clear summary of info.", 
+  "A Node CLI app that generates a webpage of ID cards displaying your Software Team. Cards have user input and define a clear summary of info fro each member.", 
   'pics/team.png', 'https://github.com/erin-smith/team-generator', "https://www.youtube.com/watch?v=px2xPOccoKU", "cadetblue");
   makeCard("JavaScript Quiz", 
   "This a timed, multiple-choice JavaScript quiz that utilizes event clicks, elements that disappear and reappear, hover, and overlay.", 
