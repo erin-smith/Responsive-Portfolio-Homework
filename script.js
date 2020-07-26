@@ -32,7 +32,7 @@ $(document).ready(function(){
   makeCard("Kill the Virus!", 
   "Inspired by COVID-19 back in March 20', This is my first ever videogame made in Scratch!", 
   'pics/game.png', "https://scratch.mit.edu/projects/378910339/", "https://scratch.mit.edu/projects/378910339/", "greenyellow");
-  makeCard("Password Generator", 
-  "A random password generator that populates a password based on user prompts and input!",
-  'pics/passwordgen.png', "https://github.com/erin-smith/password-gen-homework", "https://erin-smith.github.io/password-gen-homework/", "palevioletred");
+  makeCard("Notepad", 
+  "An app to create, save notes, view notes, and delete notes in order to keep track of important information and have your info readily available!",
+  'pics/notepad.png', "https://github.com/erin-smith/Notepad", "https://agile-wildwood-21590.herokuapp.com/", "gold");
 });
