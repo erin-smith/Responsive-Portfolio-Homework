@@ -8,16 +8,18 @@ $(document).ready(function(){
       
       $("#test").append(cardLineA.append(cardLineB.append(cardLineC,cardLineD)));
   }
-
+  makeCard("Skip to the Loo", 
+  "A User-driven full-stack application that identifies nearby public restrooms in times of need, pertinent during the era of COVID-19. (MySQL, Node, Express, Handlebars, Sequelize ORM, Google Places API)!",
+  'pics/loo_logo.jpg', "https://github.com/erin-smith/loo", "http://skip-to-the-loo.com", "lightseagreen");
   makeCard("Burger", 
-  "A MVC structured app where you can create and devour burgers (MySQL, Node, Express, Handlebars, ORM )!",
-  'pics/burgerShot.png', "https://github.com/erin-smith/burger", "https://frozen-harbor-42097.herokuapp.com/", "lightseagreen");
+  "A MVC structured app where you can create and devour burgers and interact with a gourmet menu (MySQL, Node, Express, Handlebars, ORM )!",
+  'pics/burgerShot.png', "https://github.com/erin-smith/burger", "https://frozen-harbor-42097.herokuapp.com/", "goldenrod");
+  makeCard("Purple Pages", 
+  "Group API Project:  A vital web application for finding which streaming service offers the TV show, sports program or film that you want to watch right NOW!", 
+  'pics/purplepages.png', "https://github.com/erin-smith/Purple-Pages", "https://erin-smith.github.io/Purple-Pages/", "slateblue");
   makeCard("Scheduler", 
   "This schedule-planner displays a daily 8am-6pm calendar and allows the user to plan appointments for each hour of the day. You can generate a new quote of the day as a daily heading for fun or inspiration.", 
     'pics/scheduler.png', "https://github.com/erin-smith/schedule-planner", "https://erin-smith.github.io/schedule-planner", "lightgreen");
-  makeCard("Purple Pages", 
-  "Group API Project:  A vital web application for finding which streaming service offers the TV show, sports program or film that you want to watch right NOW!", 
-  'pics/purplepages.png', "https://github.com/erin-smith/Purple-Pages", "https://erin-smith.github.io/Purple-Pages/", "mediumpurple");
   makeCard("JavaScript Quiz", 
   "This a timed, multiple-choice JavaScript quiz that utilizes event clicks, elements that disappear and reappear, hover, and overlay.", 
   'pics/quiz.png', "https://github.com/erin-smith/Quiz", "https://erin-smith.github.io/Quiz/", "indianred");
@@ -26,11 +28,11 @@ $(document).ready(function(){
   'pics/team.png', 'https://github.com/erin-smith/team-generator', "https://www.youtube.com/watch?v=px2xPOccoKU", "cadetblue");
   makeCard("Resume Tile", 
   "This is an update of my First Webpage, Resume, Bio, and Current Contact Info.", 
-  'pics/myfirstpage.png', "https://github.com/erin-smith/resume", "https://erin-smith.github.io/resume/", "burlywood");
+  'pics/myfirstpage.png', "https://github.com/erin-smith/resume", "https://erin-smith.github.io/resume/", "#FCE181");
   makeCard("Kill the Virus!", 
   "Inspired by COVID-19 back in March 20', This is my first ever videogame made in Scratch!", 
   'pics/game.png', "https://scratch.mit.edu/projects/378910339/", "https://scratch.mit.edu/projects/378910339/", "greenyellow");
   makeCard("Password Generator", 
   "A random password generator that populates a password based on user prompts and input!",
-  'pics/passwordgen.png', "https://github.com/erin-smith/password-gen-homework", "https://erin-smith.github.io/password-gen-homework/", "lightpurple");
+  'pics/passwordgen.png', "https://github.com/erin-smith/password-gen-homework", "https://erin-smith.github.io/password-gen-homework/", "palevioletred");
 });
