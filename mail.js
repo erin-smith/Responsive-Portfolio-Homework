@@ -1,24 +1,47 @@
 $(document).ready(function () {
-	
-	var settings = {
-	"async": true,
-	"crossDomain": true,
-	"url": "https://rapidprod-sendgrid-v1.p.rapidapi.com/mail/send",
-	"method": "POST",
-	"headers": {
-		"x-rapidapi-host": "rapidprod-sendgrid-v1.p.rapidapi.com",
-		"x-rapidapi-key": "f5d98f4cf8msh11198755cc5247cp143954jsn9057acac6779",
-		"content-type": "application/json",
-		"accept": "application/json"
-	},
-	"processData": false,
-	"data": "{  \"personalizations\": [    {      \"to\": [        {          \"email\": \"erin.acumen@gmail.com\"        }      ],      \"subject\": \"Hello, World!\"    }  ],  \"from\": {    \"email\": \"from_address@example.com\"  },  \"content\": [    {      \"type\": \"text/plain\",      \"value\": \"Hello, World!\"    }  ]}"
-}
-$("#mail").on("click",function() {
-	alert ("Thanks! We'll be in touch");
-});
+	$("#mail").on("click", function () {
+		const msg = {
+			name: $("#name").val().trim(),
+			email: $("#email").val().trim(),
+			message: $("#message").val().trim()
+		}
 
-$.ajax(settings).then(function (response) {
-	console.log(response);
-})
+		if (!msg.name) {
+			alert("Please enter Your name");
+			return;
+		}
+		if (!msg.email) {
+			alert("Please enter your email address");
+			return;
+		}
+		function validateEmail($email) {
+			var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+			return emailReg.test( $email );
+		  }
+	    if( !validateEmail(msg.email)) { 
+
+			alert ("Please enter a valid email address");
+			return;
+		}
+		if (!msg.message) {
+			alert("Please enter a message");
+			return;
+		}
+		console.log(msg);
+
+		var settings = {
+			"async": true,
+			"crossDomain": true,
+			"url": "https://morning-citadel-34446.herokuapp.com/api/mail",
+			"method": "POST",
+			"data": msg
+		}
+		console.log(settings);
+		$.ajax(settings).then(function (response) {
+			console.log(response);
+		})
+		alert("Thanks! We'll be in touch");
+	});
+
+
 })
